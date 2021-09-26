@@ -3,10 +3,6 @@ import Home from "../views/Home.vue";
 
 const routes = [
   {
-    path: "/",
-    redirect: "/firstLink",
-  },
-  {
     path: "/firstLink",
     name: "firstLink",
     component: Home,
@@ -35,6 +31,10 @@ const routes = [
       marginLeft: "-100vw",
       marginTop: "-100vh",
     },
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: "/firstLink",
   },
 ];
 

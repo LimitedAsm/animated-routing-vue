@@ -58,10 +58,12 @@ export default {
   flex-direction: column;
   z-index: 99;
   position: fixed;
+  background-color: rgb(209, 207, 200);
 }
 .link {
+  border: 1px solid black;
   color: black;
-  margin: 20px;
+  text-decoration: none;
 }
 .page {
   position: absolute;
@@ -71,6 +73,25 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 900px) {
+  .link {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .page {
+    font-size: 80px;
+  }
+}
+@media (max-width: 899px) {
+  .link {
+    font-size: 12px;
+    padding: 12px;
+  }
+  .page {
+    font-size: 50px;
+  }
 }
 
 .first-page {
